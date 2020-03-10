@@ -1,0 +1,21 @@
+//Abstracts
+@import 'abstracts/cores';
+@import 'abstracts/breakpoints';
+
+//Base
+@import 'base/fonte';
+@import 'base/normalize';
+
+//Components
+@import 'components/logo';
+@import 'components/menu-principal';
+
+//Layout
+@import 'layout/alinhamento-img';
+@import 'layout/alinhamento-textos';
+@import 'layout/cabecalho';
+@import 'layout/container';
+@import 'layout/rodape';
+
+//Pages
+@import 'pages/filmes'; 
