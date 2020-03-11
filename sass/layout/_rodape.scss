@@ -3,9 +3,12 @@
     &__linha-1{
         background-color: $cor-cinza;
         border-bottom: 1px solid $cor-cinzeborder;
-        padding: 0 10px 10px 10px;
+        // padding: 0 10px 10px 10px;
         overflow: auto;
-        display: flex;
+        li{
+            display: inline-block;
+            margin: 0 10px;
+        }
     }
     &__linha-2{
         background-color: $cor-cinza;
@@ -32,8 +35,11 @@
         font-weight: bold;
         text-decoration: none;
     }
-    &__coluna--vermelho{
-        color: $cor-vermelho;
+    @media(max-width: $breakpoint-sm){
+        &__coluna--vermelho{
+            color: $cor-vermelho;
+            padding: 10px;
+        }
     }
     &__titulo{
         border-bottom: 1px solid $cor-cinzeborder;
@@ -59,7 +65,7 @@
             float: left;
             //width: 33.333%;
             padding: 0 15px;
-            margin: 0   ;
+            margin: 0;
         }
     }
 }

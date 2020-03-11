@@ -1,0 +1,15 @@
+.menu-inicio{
+    &__lista{
+        display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    &__item{
+        width: 33.33%;
+        color: $cor-cinzaescuro;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+    }
+}
