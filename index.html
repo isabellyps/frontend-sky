@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SKY</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<header class="cabecalho">
     <div>
         <div>
-            <a href="index.html" class="logo">Sky</a>
+            <a href="index.html" class="logo">Logo</a>
             <nav class="menu-principal menu-principal--fechado">
                 <button class="menu-principal__btn">Abrir/Fechar Menu</button>
                 <ul class="menu-principal__lista">
-                    <li><a>Light/Dark</a></a></li>
-                    <li><a>Diminuir Fonte</a></li>
-                    <li><a>Aumentar Fonte</a></li>
-                    <li><a>Play</a></li>
-                    <li><a>Entrar</a></li>
-                    <li><a><input type="button"></a></li>
+                    <li><a class="menu-principal__item" href="">L/D</a></li>
+                    <li><a class="menu-principal__item" href="">DF</a></li>
+                    <li><a class="menu-principal__item" href="">AF</a></li>
+                    <li><a class="menu-principal__item" href="">PP</a></li>
+                    <li><a class="menu-principal__item" href="">Entrar</a></li>
+                    <li><a class="menu-principal__item" href=""><input type="button"></a></li>
                 </ul>
             </nav>
         </div>
@@ -34,19 +36,19 @@
 <div>
 <section>
     <div>
-        <a><img src="./Images/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
+        <a><img src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
     </div>
     <div>
         <h2>Recomendados pela Sky</h2>
         <ul>
             <li>
                 <a href="">
-                    <img src="./Images/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
+                    <img src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="./Images/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
+                    <img src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
                 </a>
             </li>
         </ul>
@@ -56,12 +58,12 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="./Images/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
+                    <img src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="./Images/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
+                    <img src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
                 </a>
             </li>
         </ul>
@@ -70,12 +72,12 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="./Images/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
+                    <img src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="./Images/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
+                    <img src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
                 </a>
             </li>
         </ul>
@@ -85,55 +87,58 @@
 
 </main>
 
-<footer>
+<footer class="rodape">
     <div>
-
-        <h1>Logo Sky</h1>
-        <h1>Rede sociais</h1>
-    </div>
-    <div>
-        <h1>Sky app</h1>
-        <div>
-            <nav>
-                <h2>Sobre</h2>
-                <ul>
-                    <li>
-                        <a href="">Nossa história</a>                    
-                    </li>
-                    <li>
-                        <a href="">Imprensa</a>
-                    </li>
-                    <li>
-                        <a href="">Prêmios conquistados</a>
-                    </li>
-                    <li>
-                        <a href="">Credenciamento</a>
-                    </li>
-                    <li>
-                        <a href="">Trabalhe com a gente</a>
-                    </li><li>
-                        <a href="">Promoção</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <h2>Nossas responsabilidades</h2>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                <h1>Ajuda</h1>
-            </nav>
-        </div>
-        <div>
-            <nav>
-                SKY Empresas
-            </nav>
+        <div class="rodape__linha-1">
+            <a href="" class="logo logo--cinza">Logo</a>
+            <h3>Rede sociais</h3>
         </div>
     </div>
     <div>
+        <div class="rodape__linha-2"> 
+            <h2>Sky app</h2>
+            <div>
+                <nav>
+                    <h2 class="rodape__titulo">Sobre</h2>
+                    <ul class="rodape__lista-links">
+                        <li>
+                            <a class="rodape__lista-links__item" href="">Nossa história</a>                    
+                        </li>
+                        <li>
+                            <a class="rodape__lista-links__item" href="">Imprensa</a>
+                        </li>
+                        <li>
+                            <a class="rodape__lista-links__item" href="">Prêmios conquistados</a>
+                        </li>
+                        <li>
+                            <a class="rodape__lista-links__item" href="">Credenciamento</a>
+                        </li>
+                        <li>
+                            <a class="rodape__lista-links__item" href="">Trabalhe com a gente</a>
+                        </li><li>
+                            <a class="rodape__lista-links__item" href="">Promoção</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <a href="" class="rodape__titulo">Nossas responsabilidades</a>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <a href="" class="rodape__titulo">Ajuda</a>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <a href="" class="rodape__titulo">SKY Empresas</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="rodape__linha-3">
         <nav>
             <a href="">Início |</a>
             <a href="">Política de Privacidade |</a>
@@ -144,8 +149,8 @@
             <a href="">Consumidor.gov</a>
         </nav>
     </div>
-    <div>
-        <p>Todos os direitos reservados. Todas as marcas SKY e qualquer propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga LTDA. mediante licença</p>
+    <div class="rodape__linha-4">
+        <p>® Todos os direitos reservados. Todas as marcas SKY e qualquer propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga LTDA. mediante licença</p>
     </div>
 </footer>
 </body>

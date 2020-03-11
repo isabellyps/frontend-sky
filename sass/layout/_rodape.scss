@@ -1,0 +1,41 @@
+.rodape{
+    background-color: $cor-cinza;
+    &__linha-1{
+        background-color: $cor-cinza;
+        border-bottom: 1px solid $cor-cinzaescuro;
+        padding: 0 10px 10px 10px;
+    }
+    &__linha-2{
+        background-color: $cor-cinza;
+        border-bottom: 1px solid $cor-cinzaescuro;
+        padding: 0 10px 10px 10px;
+    }
+    &__linha-3{
+        background-color: $cor-branca;
+        text-align: center;
+        text-decoration: none;
+        color: $cor-cinzaescuro;
+    }
+    &__linha-4{
+        background-color: $cor-cinza;
+        text-align: center;
+        padding: 15px;
+        color: $cor-cinzaescuro;
+        font-weight: bold;
+    }
+    &__titulo{
+        border-bottom: 1px solid $cor-cinzaescuro;
+        padding: 0 10px 10px 10px;
+        font-size: 18px;
+    }
+    &__lista-links{
+        padding: 0;
+        list-style: none;
+    }
+    &__lista-links__item{
+        color: $cor-cinzaescuro;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
