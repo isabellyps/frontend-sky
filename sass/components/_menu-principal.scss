@@ -7,7 +7,7 @@
         background-color: $cor-branca;
         background-image: url("../img/menuprincipal-btn-bg.png");
         background-repeat: no-repeat;
-        background-position: 5px 5px;
+        background-position: -48px 7px;
         border-color: $cor-cinza;
         border-style: solid;
         border-radius: 5px;
@@ -16,9 +16,6 @@
         position: absolute;
         top: 15px;
         right: 15px;
-    }
-    &--fechar{
-        background-position: -48px 7px;
     }
     &__lista{
         padding: 0;
@@ -31,5 +28,20 @@
         margin-bottom: 5px;
         display: block;
         font-size: 18px;
+    }
+    @media(max-width: $breakpoint-md){
+        &--fechado{
+            .menu-principal__btn{
+                background-position: 5px 5px;
+            }
+            .menu-principal__lista{
+                margin: 0;
+            }
+            .menu-principal__item{
+                margin: 0;
+                height: 0;
+                overflow: hidden;
+            }
+        }
     }
 }
