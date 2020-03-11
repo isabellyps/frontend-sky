@@ -1,0 +1,20 @@
+.lista-filmes{
+    list-style: none;
+    padding: 0px 0px 0px 15px;
+    &__titulo{
+        color: $cor-preto;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0px 0px 0px 15px;
+    }
+    &__img--principal{
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    &__img{
+        width: 40%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}

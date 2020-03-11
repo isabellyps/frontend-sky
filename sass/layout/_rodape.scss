@@ -2,7 +2,7 @@
     background-color: $cor-cinza;
     &__linha-1{
         background-color: $cor-cinza;
-        border-bottom: 1px solid $cor-cinzaescuro;
+        border-bottom: 1px solid $cor-cinzeborder;
         padding: 0 10px 10px 10px;
     }
     &__linha-2{
@@ -31,7 +31,7 @@
         color: $cor-vermelho;
     }
     &__titulo{
-        border-bottom: 1px solid $cor-cinzaescuro;
+        border-bottom: 1px solid $cor-cinzeborder;
         padding: 0 10px 10px 10px;
         font-size: 18px;
         color: $cor-preto;
