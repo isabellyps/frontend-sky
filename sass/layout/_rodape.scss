@@ -4,6 +4,8 @@
         background-color: $cor-cinza;
         border-bottom: 1px solid $cor-cinzeborder;
         padding: 0 10px 10px 10px;
+        overflow: auto;
+        display: flex;
     }
     &__linha-2{
         background-color: $cor-cinza;
@@ -12,16 +14,19 @@
     }
     &__linha-3{
         background-color: $cor-branca;
-        text-align: center;
+        text-align: left;
+        padding: 0 10px 10px 10px;
         text-decoration: none;
         color: $cor-cinzaescuro;
+        overflow: auto;
     }
     &__linha-4{
         background-color: $cor-cinza;
         text-align: center;
-        padding: 15px;
+        padding: 0 10px 10px 10px;
         color: $cor-cinzaescuro;
         font-weight: bold;
+        overflow: auto;
     }
     &__coluna{
         font-weight: bold;
@@ -48,5 +53,13 @@
         text-decoration: none;
         margin-bottom: 10px;
         display: block;
+    }
+    @media(min-width: $breakpoint-md){
+        &__coluna{
+            float: left;
+            //width: 33.333%;
+            padding: 0 15px;
+            margin: 0   ;
+        }
     }
 }
