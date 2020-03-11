@@ -7,8 +7,8 @@
     }
     &__linha-2{
         background-color: $cor-cinza;
-        border-bottom: 1px solid $cor-cinzaescuro;
         padding: 0 10px 10px 10px;
+        text-decoration: none;
     }
     &__linha-3{
         background-color: $cor-branca;
@@ -23,10 +23,21 @@
         color: $cor-cinzaescuro;
         font-weight: bold;
     }
+    &__coluna{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    &__coluna--vermelho{
+        color: $cor-vermelho;
+    }
     &__titulo{
         border-bottom: 1px solid $cor-cinzaescuro;
         padding: 0 10px 10px 10px;
         font-size: 18px;
+        color: $cor-preto;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 25px;
     }
     &__lista-links{
         padding: 0;
