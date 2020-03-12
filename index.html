@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,7 +28,7 @@
                 <div class="cabecalho__coluna-1">
                     <a href="index.html" class="logo">Logo</a>
                     <nav class="menu-principal menu-principal--fechado">
-                        <a class="menu-principal__btn"><i class="fas fa-bars"></i></a>
+                        <a class="menu-principal__btn">Abrir/Fechar menu</a>
                         <ul class="menu-principal__lista">
                             <li><a class="menu-principal__item" href=""><i class="fab fa-odnoklassniki"></i></a></li>
                             <li><a class="menu-principal__item" href=""><i class="fas fa-adjust"></i></a></li>
@@ -78,7 +79,7 @@
                     <!-- inicio carrossel -->
                     <div class="carousel">
 
-                        <div>
+                        <div id="resultado">  
                             <a class="lista-filmes__item"><img class="lista-filmes__img--principal"
                                     src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
                         </div>
@@ -323,59 +324,62 @@
             </div>
             <div class="rodape__coluna-3">
                 <div class="rodape__coluna-3">
-                    <nav>
+                    <nav class="menu-rodape menu-rodape--fechado">
                         <h2 class="rodape__titulo">Sobre</h2>
-                        <ul class="rodape__lista-links-2">
+                        <a class="menu-rodape__btn">Abrir/Fechar</a>
+                        <ul class="rodape__lista-links-2 menu-rodape__lista">
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Nossa história</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Nossa história</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Imprensa</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Imprensa</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Prêmios conquistados</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Prêmios conquistados</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Credenciamento</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Credenciamento</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Trabalhe com a gente</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Trabalhe com a gente</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Promoção</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Promoção</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="rodape__coluna-3">
-                    <nav>
+                    <nav class="menu-rodape menu-rodape--fechado">
                         <h2 class="rodape__titulo">Nossas responsabilidades</h2>
-                        <ul class="rodape__lista-links-2">
+                        <a class="menu-rodape__btn">Abrir/Fechar</a>
+                        <ul class="rodape__lista-links-2 menu-rodape__lista">
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Conselho as usuários</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Conselho as usuários</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Pesquisa Anatel</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Pesquisa Anatel</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Relatórios de transparência</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Relatórios de transparência</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Acessibilidade</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Acessibilidade</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="rodape__coluna-3">
-                    <nav>
+                    <nav class="menu-rodape menu-rodape--fechado">
                         <h2 class="rodape__titulo">Ajuda</h2>
-                        <ul class="rodape__lista-links-2">
+                        <a class="menu-rodape__btn">Abrir/Fechar</a>
+                        <ul class="rodape__lista-links-2 menu-rodape__lista">
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Central de ajuda</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Central de ajuda</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2" href="">Manuais</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Manuais</a>
                             </li>
                         </ul>
                     </nav>
@@ -406,6 +410,8 @@
         </div>
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -418,7 +424,7 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
