@@ -9,6 +9,8 @@
     }
     &__linha-2{
         background-color: $cor-cinza;
+        font-weight: bold;
+        font-size: 18px;
         padding: 0 10px 10px 10px;
         text-decoration: none;
     }
@@ -32,12 +34,6 @@
     //     font-weight: bold;
     //     text-decoration: none;
     // }
-    @media(max-width: $breakpoint-sm){
-        &__coluna--vermelho{
-            color: $cor-vermelho;
-            padding: 10px;
-        }
-    }
     &__titulo{
         border-bottom: 1px solid $cor-cinzeborder;
         padding: 0 10px 10px 10px;
@@ -71,5 +67,21 @@
     &__coluna-1{
         float: left;
         width: 50%;
+    }
+    &__coluna-2{
+        display: inline-block;
+    }
+    &__coluna-2 p{
+        margin: 0px 0px 0px 10px;
+        padding: 5px;
+    }
+    &__coluna-2 img{
+        margin: 15px 0px 0px 0px;
+
+    }
+    @media(max-width: $breakpoint-sm){
+        &__coluna-2--vermelho{
+            color: $cor-vermelho;
+        }
     }
 }
