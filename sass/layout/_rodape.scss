@@ -2,13 +2,10 @@
     background-color: $cor-cinza;
     &__linha-1{
         background-color: $cor-cinza;
+        border-top: 1px solid $cor-cinzeborder;
         border-bottom: 1px solid $cor-cinzeborder;
         // padding: 0 10px 10px 10px;
         overflow: auto;
-        li{
-            display: inline-block;
-            margin: 0 10px;
-        }
     }
     &__linha-2{
         background-color: $cor-cinza;
@@ -31,10 +28,10 @@
         font-weight: bold;
         overflow: auto;
     }
-    &__coluna{
-        font-weight: bold;
-        text-decoration: none;
-    }
+    // &__coluna{
+    //     font-weight: bold;
+    //     text-decoration: none;
+    // }
     @media(max-width: $breakpoint-sm){
         &__coluna--vermelho{
             color: $cor-vermelho;
@@ -53,12 +50,15 @@
     &__lista-links{
         padding: 0;
         list-style: none;
+        display: flex;
+        float: right;
     }
     &__lista-links__item{
         color: $cor-cinzaescuro;
         text-decoration: none;
         margin-bottom: 10px;
         display: block;
+        padding: 0px 10px 0px 10px;
     }
     @media(min-width: $breakpoint-md){
         &__coluna{
@@ -67,5 +67,9 @@
             padding: 0 15px;
             margin: 0;
         }
+    }
+    &__coluna-1{
+        float: left;
+        width: 50%;
     }
 }
