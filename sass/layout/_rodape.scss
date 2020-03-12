@@ -90,9 +90,9 @@
     }
     @media(min-width: $breakpoint-md){
         &__coluna-3{
-            display: inline-table;
-            table-layout: fixed;
-            width: 35.333%;
+            display: inline-flex;
+            flex-flow: wrap;
+            width: 38.333%;
             padding: 0 15px;
             margin: 0;
         }
@@ -105,9 +105,9 @@
     }
     @media(min-width: $breakpoint-lg){
         &__coluna-3{
-            display: inline-table;
-            table-layout: fixed;
-            width: 35.333%;
+            display: inline-flex;
+            flex-flow: wrap;
+            width: 42.333%;
             padding: 0 15px;
             margin: 0;
         }
