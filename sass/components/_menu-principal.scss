@@ -1,21 +1,13 @@
 .menu-principal{
     &__btn{
         display: block;
-        width: 50px;
-        height: 50px;
-        text-indent: -9999px;
-        background-color: $cor-branca;
-        background-image: url("../img/menuprincipal-btn-bg.png");
-        background-repeat: no-repeat;
-        background-position: -48px 7px;
-        border-color: $cor-cinza;
-        border-style: solid;
-        border-radius: 5px;
+        width: 55px;
+        height: 60px;
         cursor: pointer;
-
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 3px;
+        right: 0;
+        font-size: 42px;
         @media(min-width: $breakpoint-md){
             display: none;
         }
@@ -45,9 +37,9 @@
     }
     @media(max-width: $breakpoint-md - 1){
         &--fechado{
-            .menu-principal__btn{
-                background-position: 5px 5px;
-            }
+            // .menu-principal__btn{
+            //     background-position: 5px 5px;
+            // }
             .menu-principal__lista{
                 margin: 0;
             }

@@ -1,14 +1,13 @@
 .cabecalho{
     background: $cor-cinza;
-    padding: 15px;
-    width: 100%;
+    padding: 10px 15px 10px 15px;
     z-index: 99;
     border-bottom: 1px solid $cor-cinzeborder;
     @media(min-width: $breakpoint-md){
-        min-height: 100px;
+        min-height: 60px;
         .logo{
             float: left;
-            margin-top: (100 - 53 - 30) / 2 + px;
+            margin-top: 10px;
         }
         .menu-principal{
             float: right
@@ -16,6 +15,10 @@
                 &__lista{
                 margin-bottom: 0;
             }
+        }
+        &__coluna-1{
+            float: left;
+            width: 50%;
         }
     }
 }
