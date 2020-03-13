@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d1a143b2b6.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
@@ -63,7 +64,7 @@
                 <div class="col-sm menu-inicio__item">
                     <a href="canais.html">Canais</a>
                 </div>
-    <!-- 
+                <!-- 
                     <ul class="menu-inicio__lista">
                         
                         <li class="menu-inicio__item"><a href="series.html"></a>Séries</li>
@@ -74,226 +75,53 @@
 
         </div>
         <div>
-            <section>
-                <div class="lista-filmes">
-                    <!-- inicio carrossel -->
-                    <div class="carousel">
 
-                        <div id="resultado">  
-                            <a class="lista-filmes__item"><img class="lista-filmes__img--principal"
-                                    src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
-                        </div>
-                        <div>
-                            <a class="lista-filmes__item"><img class="lista-filmes__img--principal"
-                                    src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
-                        </div>
-                        <div>
-                            <a class="lista-filmes__item"><img class="lista-filmes__img--principal"
-                                    src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
-                        </div>
-                        <div>
-                            <a class="lista-filmes__item"><img class="lista-filmes__img--principal"
-                                    src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
-                        </div>
-                        <div>
-                            <a class="lista-filmes__item"><img class="lista-filmes__img--principal"
-                                    src="./img/Filme/5a563880332c65000165b739_2_1920x1080.png" alt="filme"></a>
-                        </div>
-                    </div>
-                    <!-- fim carrossel -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="destaques">
+
                 </div>
-                <div>
-                    <h3 class="lista-filmes__titulo">Recomendados pela Sky</h3>
-                    <!-- inicio carrossel -->
-                    <div class="carousel">
+                <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <br>
+            <div class="swiper-container">
+                <h3 class="lista-filmes__titulo">Infantil</h3>
+                <div class="swiper-wrapper" id="infantil">
 
-                        <div>
-
-                            <img class="lista-filmes__img"
-                                src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                        </div>
-                        <div>
-
-                            <img class="lista-filmes__img"
-                                src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                        </div>
-                        <div>
-
-                            <img class="lista-filmes__img"
-                                src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                        </div>
-                        <div>
-
-                            <img class="lista-filmes__img"
-                                src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                        </div>
-                        <div>
-
-                            <img class="lista-filmes__img"
-                                src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                        </div>
-                    </div>
-                    <!-- fim carrossel -->
-
-                    <!--                     
-                    <ul class="lista-filmes">
-                        <li class="lista-filmes__item">
-                            <div>
-                                
-                            </div>
-                            <div>
-                                <a href="">
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-
- -->
                 </div>
-                <div>
-                    <h3 class="lista-filmes__titulo">Novidades da semana</h3>
-                    <ul class="lista-filmes">
-                        <li class="lista-filmes__item">
+                <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <br>
+            <div class="swiper-container">
+                <h3 class="lista-filmes__titulo">Drama</h3>
+                <div class="swiper-wrapper" id="drama">
 
-                            <!-- inicio carrossel -->
-                            <div class="carousel">
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                            </div>
-
-                            <!-- fim carrossel -->
-
-                        </li>
-                        <!-- <li class="lista-filmes__item">
-                <a href="">
-                    <img class="lista-filmes__img" src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-                </a>
-            </li> -->
-                    </ul>
                 </div>
-                <div>
-                    <h3 class="lista-filmes__titulo">Recomendados pela SKY</h3>
-                    <ul class="lista-filmes">
-                        <li class="lista-filmes__item">
+                <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <br>
+            <div class="swiper-container">
+                <h3 class="lista-filmes__titulo">Ficção Científica</h3>
+                <div class="swiper-wrapper" id="ficcaocientifica">
 
-
-                            <!-- inicio carrossel -->
-                            <div class="carousel">
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                            </div>
-
-                            <!-- fim carrossel -->
-                        </li>
-                    </ul>
                 </div>
-                <div>
-                    <h3 class="lista-filmes__titulo">Marvel</h3>
-                    <ul class="lista-filmes">
-                        <li class="lista-filmes__item">
-                            <!-- inicio carrossel -->
-                            <div class="carousel">
-                                <div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <br>
+            <div class="swiper-container">
+                <h3 class="lista-filmes__titulo">Comédia</h3>
+                <div class="swiper-wrapper" id="comédia">
 
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                                <div>
-
-                                    <img class="lista-filmes__img"
-                                        src="./img/Filme/5a563880332c65000165b739_3_1000x1500 rec.png" alt="">
-
-                                </div>
-                            </div>
-
-                            <!-- fim carrossel -->
-                        </li>
-                    </ul>
                 </div>
-            </section>
+                <div class="swiper-pagination"></div>
+            </div>
+            <br>
+            <br>
         </div>
+
 
     </main>
 
@@ -335,13 +163,15 @@
                                 <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Imprensa</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Prêmios conquistados</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Prêmios
+                                    conquistados</a>
                             </li>
                             <li>
                                 <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Credenciamento</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Trabalhe com a gente</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Trabalhe com a
+                                    gente</a>
                             </li>
                             <li>
                                 <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Promoção</a>
@@ -355,13 +185,15 @@
                         <a class="menu-rodape__btn">Abrir/Fechar</a>
                         <ul class="rodape__lista-links-2 menu-rodape__lista">
                             <li>
-                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Conselho as usuários</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Conselho as
+                                    usuários</a>
                             </li>
                             <li>
                                 <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Pesquisa Anatel</a>
                             </li>
                             <li>
-                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Relatórios de transparência</a>
+                                <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Relatórios de
+                                    transparência</a>
                             </li>
                             <li>
                                 <a class="rodape__lista-links__item-2 menu-rodape__item" href="">Acessibilidade</a>
@@ -410,6 +242,8 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

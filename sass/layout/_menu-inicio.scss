@@ -17,6 +17,10 @@
         margin-bottom: 20px;
         height: 35px;
     }
+    &__item--atual{
+        color: $cor-vermelho;
+        
+    }
     @media(max-width: $breakpoint-sm) {
         .container-fluid {
             margin: 0px;
