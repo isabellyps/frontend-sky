@@ -1,16 +1,16 @@
 $(document).ready(function () {
-  const botaoMenu = document.querySelector('.menu-principal__btn');
-  botaoMenu.addEventListener("click", abreFechaMenu);
+  const btnMenu = document.querySelector('.menu-principal__btn');
+  btnMenu.addEventListener("click", openCloseMenu);
 
-  const botoesRodape = document.querySelectorAll('.menu-rodape__btn');
-  const menusRodape = document.querySelectorAll('.menu-rodape');
+  const btnsFooter = document.querySelectorAll('.menu-rodape__btn');
+  const menusFooter = document.querySelectorAll('.menu-rodape');
 
-  for (let index = 0; index < botoesRodape.length; index++) {
-    const botaoRodape = botoesRodape[index];
-    const menuRodape = menusRodape[index];
+  for (let index = 0; index < btnsFooter.length; index++) {
+    const btnFooter = btnsFooter[index];
+    const menuFooter = menusFooter[index];
 
-    botaoRodape.addEventListener("click", function () {
-      abreFechaRodape(menuRodape);
+    btnFooter.addEventListener("click", function () {
+      openCloseFooter(menuFooter);
     });
   }
 
@@ -28,7 +28,7 @@ function renderMovies(movies, mainDiv) {
   divActive.classList.add("swiper-slide");
   divActive.classList.add("swiper-slide-active");
   divActive.style.marginRight = "30px";
-  divActive.style.width = "250px";
+  divActive.style.width = "300px";
 
   let linkImageActive = document.createElement("a");
   linkImageActive.classList.add("lista-filmes__item");
@@ -36,7 +36,7 @@ function renderMovies(movies, mainDiv) {
   let movieImageActive = document.createElement("img");
   movieImageActive.classList.add("lista-filmes__img--principal");
   movieImageActive.src = firstMovie.images[0].url;
-  movieImageActive.alt = "filme";
+  movieImageActive.alt = "movie";
 
   linkImageActive.appendChild(movieImageActive);
 
@@ -46,7 +46,7 @@ function renderMovies(movies, mainDiv) {
   divNext.classList.add("swiper-slide");
   divNext.classList.add("swiper-slide-next");
   divNext.style.marginRight = "30px";
-  divNext.style.width = "200px";
+  divNext.style.width = "300px";
 
   let linkImageNext = document.createElement("a");
   linkImageNext.classList.add("lista-filmes__item");
@@ -54,7 +54,7 @@ function renderMovies(movies, mainDiv) {
   let movieImageNext = document.createElement("img");
   movieImageNext.classList.add("lista-filmes__img--principal");
   movieImageNext.src = secondMovie.images[0].url;
-  movieImageNext.alt = "filme";
+  movieImageNext.alt = "movie";
 
   linkImageNext.appendChild(movieImageNext);
 
@@ -69,7 +69,7 @@ function renderMovies(movies, mainDiv) {
     let divMovie = document.createElement("div");
     divMovie.classList.add("swiper-slide");
     divMovie.style.marginRight = "30px";
-    divMovie.style.width = "200px";
+    divMovie.style.width = "300px";
 
     let linkImageMovie = document.createElement("a");
     linkImageMovie.classList.add("lista-filmes__item");
@@ -77,7 +77,7 @@ function renderMovies(movies, mainDiv) {
     let movieImageMovie = document.createElement("img");
     movieImageMovie.classList.add("lista-filmes__img--principal");
     movieImageMovie.src = movie.images[0].url;
-    movieImageMovie.alt = "filme";
+    movieImageMovie.alt = "movie";
 
     linkImageMovie.appendChild(movieImageMovie);
 
@@ -87,15 +87,14 @@ function renderMovies(movies, mainDiv) {
   }
 }
 
-// //requisição API
 function getMovies() {
   const url = "https://sky-frontend.herokuapp.com/movies";
 
   let xhttp = new XMLHttpRequest();
   xhttp.open("GET", url, true);
 
-  xhttp.onreadystatechange = function () {//Função a ser chamada quando a requisição retornar do servidor
-    if (xhttp.readyState == 4 && xhttp.status == 200) {//Verifica se o retorno do servidor deu certo
+  xhttp.onreadystatechange = function () {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
       let moviesResponse = JSON.parse(xhttp.responseText);
       console.log(moviesResponse);
 
@@ -115,26 +114,24 @@ function getMovies() {
       let divMoviesFiccao = document.getElementById("ficcaocientifica");
       renderMovies(ficcaoCientifica, divMoviesFiccao);
 
-      let comédia = moviesResponse[2].movies.filter((movie) => movie.categories.includes("Comédia"));
-      let divMoviesComédia = document.getElementById("comédia");
-      renderMovies(comédia, divMoviesComédia);
+      let comedia = moviesResponse[2].movies.filter((movie) => movie.categories.includes("Comédia"));
+      let divMoviesComedia = document.getElementById("comedia");
+      renderMovies(comedia, divMoviesComedia);
     }
   }
 
-  xhttp.send();//A execução do script CONTINUARÁ mesmo que a requisição não tenha retornado do servidor
+  xhttp.send();
 }
 
-function abreFechaMenu(event) {
+function openCloseMenu(event) {
   let menuPrincipal = document.querySelector('.menu-principal');
   menuPrincipal.classList.toggle('menu-principal--fechado')
 }
 
-function abreFechaRodape(menuRodape) {
-  menuRodape.classList.toggle('menu-rodape--fechado')
+function openCloseFooter(menuFooter) {
+  menuFooter.classList.toggle('menu-rodape--fechado')
 }
 
-
-//carousel
 let swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -143,39 +140,3 @@ let swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
-// $('.carousel').slick({
-//   centerMode: true,
-//   centerPadding: '5px',
-//   slidesToShow: 3,
-//   infinite: false,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: true,
-//         centerMode: true,
-//         centerPadding: '5px',
-//         slidesToShow: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: true,
-//         centerMode: true,
-//         centerPadding: '5px',
-//         slidesToShow: 0
-//       }
-//     }
-//   ]
-// });
-
-//   $('.carousel').slick({
-//     dots: true,
-//     infinite: false,
-//     speed: 300,
-//     slidesToShow: 3,
-//     centerMode: true,
-//     variableWidth: true
-//   });
-

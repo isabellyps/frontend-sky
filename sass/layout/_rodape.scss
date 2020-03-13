@@ -27,7 +27,7 @@
     &__linha-4{
         background-color: $cor-cinza;
         text-align: center;
-        padding: 0 10px 10px 10px;
+        padding: 0 10px 10px 15px;
         color: $cor-cinzaescuro;
         overflow: auto;
     }
@@ -65,15 +65,15 @@
         padding: 5px;
     }
     &__coluna-2 img{
-        margin: 15px 0px 0px 0px;
+        margin: 0px 0px 0px 15px;
+        padding: 0px 0px 0px 0px;
     }
-    @media(max-width: $breakpoint-sm){
+    @media(max-width: $breakpoint-sm + 1){
         &__coluna-2--vermelho{
             color: $cor-vermelho;
+
         }
-        &__coluna-2 #apple_google-store{
-            display: none;
-        }
+
     }
     &__lista-links-2{
         padding: 0;
@@ -103,6 +103,9 @@
         &__titulo{
             border-top: 0px;
         }
+        &__linha-1{
+            padding: 10px 40px 10px 40px;
+        }
     }
     @media(min-width: $breakpoint-lg){
         &__coluna-3{
@@ -113,10 +116,16 @@
             margin: 0;
         }
         &__linha-2{
-            padding: 0;
+            padding: 20px 90px 0px 80px;
         }
         &__titulo{
             border-top: 0px;
+        }
+        &__linha-1 {
+            padding: 10px 200px 10px 80px;
+        }
+        &__lista-links-2{
+            padding-right: 50px;
         }
     }
     &__lista-links-3{
@@ -132,5 +141,10 @@
         padding: 0px 10px 0px 10px;
         font-size: 15px;
         text-align: right;
+    }
+    @media(max-width: $breakpoint-sm + 1){
+        &__coluna-2--vermelho img{
+            display: none;
+        }
     }
 }

@@ -9,7 +9,6 @@
         font-weight: bold;
         text-align: center;
     }
-
     a {
         color: $cor-cinzaescuro;
     }
@@ -19,7 +18,6 @@
     }
     &__item--atual{
         color: $cor-vermelho;
-        
     }
     @media(max-width: $breakpoint-sm) {
         .container-fluid {
